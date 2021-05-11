@@ -10,7 +10,6 @@
     max-height:425px !important;
     z-index: 1;
     border-radius: 25px;
-    display: inline-block;
 }
 #dice1{
     background-color: #17A2B8;
@@ -29,7 +28,7 @@
     align-items: center;
 }
 .play{
-    height: 200px;
+    min-height: 200px;
 }
 
 .zar-1, .zar-2, .zar-3, .zar-4, .zar-5, .zar-6{
@@ -38,3 +37,75 @@
 .zar-1-c .zar-1, .zar-2-c .zar-2, .zar-3-c .zar-3, .zar-4-c .zar-4, .zar-5-c .zar-5, .zar-6-c .zar-6{
     visibility:visible;
 }
+.tahta{
+    display:flex;
+    justify-content:space-between;
+}
+.skor{
+    display:flex !important;
+    flex-direction:column !important;
+}
+
+@media only screen and (max-width: 995px) {
+    .dice{
+        min-width: 300px !important;
+        max-width: 300px !important;
+        min-height:300px !important;
+        max-height:300px !important;
+    }
+    .number{
+        width:70px !important;
+        height:70px !important;
+    }
+    #match{
+        font-size:6rem !important;
+    }
+    .play{
+        height:100px !important;
+    }
+    #player1, #player2, .versus{
+        font-size:2rem !important;
+    }
+  }
+  @media only screen and (max-width: 770px) {
+    .dice{
+        min-width: 200px !important;
+        max-width: 200px !important;
+        min-height:200px !important;
+        max-height:200px !important;
+    }
+    .number{
+        width:45px !important;
+        height:45px !important;
+    }
+  }
+@media only screen and (max-width: 450px) {
+    .tahta{
+        flex-direction:row;
+        align-items:center;
+    }
+    .dice{
+        min-width: 150px !important;
+        max-width: 150px !important;
+        min-height:150px !important;
+        max-height:150px !important;
+    }
+    .number{
+        width:35px !important;
+        height:35px !important;
+    }
+    #match{
+        font-size:4rem !important;
+    }
+    .play{
+        height:100px !important;
+    }
+    #player1, #player2, .versus{
+        font-size:2rem !important;
+    }
+}
+@media only screen and (max-width: 374px) {
+    .vscol{
+        visibility:hidden;
+    }
+  }
