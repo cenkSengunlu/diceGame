@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Play', sans-serif !important;
+}
+.dice{
+    min-width: 425px !important;
+    max-width: 425px !important;
+    min-height:425px !important;
+    max-height:425px !important;
+    z-index: 1;
+    border-radius: 25px;
+    display: inline-block;
+}
+#dice1{
+    background-color: #17A2B8;
+}
+#dice2{
+    background-color: #FF6600;
+}
+.number{
+    z-index: 2;
+    width:100px;
+    height:100px;
+    border-radius:50%;
+}
+.roll{
+    display:flex;
+    align-items: center;
+}
+.play{
+    height: 200px;
+}
+
+.zar-1, .zar-2, .zar-3, .zar-4, .zar-5, .zar-6{
+    visibility:hidden;
+}
+.zar-1-c .zar-1, .zar-2-c .zar-2, .zar-3-c .zar-3, .zar-4-c .zar-4, .zar-5-c .zar-5, .zar-6-c .zar-6{
+    visibility:visible;
+}
